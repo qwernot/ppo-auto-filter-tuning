@@ -1,0 +1,40 @@
+{
+  "name": "Filter Example One Highres Review FixHeight v1",
+  "status": "review_completed_not_formally_promoted",
+  "review_manifest": "filter_example_one_reference_tuning_manifest_v2_highres_fixheight.json",
+  "lowcost_anchor_source": "filter_example_one_reference_anchor_fixheight_v1.json",
+  "recommended_training_anchor_source": "filter_example_one_reference_anchor_fixheight_v1.json",
+  "review_workspaces": {
+    "adj_1p15": "../models/reference_runs/highres_review_adj_1p15"
+  },
+  "rows": [
+    {
+      "label": "adj_1p15",
+      "variable_values": {
+        "outer_resonator_width": 12.0,
+        "middle_resonator_width": 23.0,
+        "adjacent_coupling_gap": 1.15,
+        "cross_coupling_gap": 1.8,
+        "feed_offset": 4.6,
+        "feed_width": 1.1,
+        "middle_open_gap": 1.2,
+        "outer_open_gap": 1.1
+      },
+      "target_satisfied": false,
+      "elapsed_seconds": 551.2363380999304,
+      "main_peak_freq_hz": 905000000.0,
+      "bandwidth_3db_hz": 51248273.34655833,
+      "main_peak_s21_db": -1.0750288884234809,
+      "best_s11_db": -31.59163733669335,
+      "high_side_zero_freq_hz": 944000000.0,
+      "high_side_zero_s21_db": -28.254001362535202,
+      "s21_at_950_db": -22.17422624490733,
+      "selection_score": 11.248273346558333
+    }
+  ],
+  "conclusions": [
+    "The current low-cost satisfying anchor is not automatically promotable to a formal high-resolution anchor.",
+    "adjacent_coupling_gap = 1.15 mm is the closest high-resolution continuation of the low-cost anchor because it preserves the center frequency and the high-side-zero locality while only missing the bandwidth tolerance slightly.",
+    "Therefore the PPO reset center should remain the low-cost fixheight anchor, while the high-resolution template is used as a periodic referee rather than the first-stage training template."
+  ]
+}

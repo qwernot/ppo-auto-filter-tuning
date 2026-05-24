@@ -1,0 +1,18 @@
+{
+  "name": "Filter Example One",
+  "center_freq_hz": {
+    "target": 905000000.0,
+    "tolerance": 5000000.0
+  },
+  "bandwidth_hz": {
+    "target": 40000000.0,
+    "tolerance": 10000000.0
+  },
+  "max_insertion_loss_db": 2.0,
+  "min_return_loss_db": 15.0,
+  "high_side_zero_freq_hz": {
+    "target": 950000000.0,
+    "tolerance": 50000000.0
+  },
+  "min_high_side_zero_depth_db": 20.0
+}

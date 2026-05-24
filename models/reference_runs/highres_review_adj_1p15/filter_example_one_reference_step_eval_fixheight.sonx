@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SonnetProject Version="20" Type="GEO" xmlns="https://www.sonnetsoftware.com/schema/project" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.sonnetsoftware.com/schema/project https://www.sonnetsoftware.com/schema/project/sonnet_project_file-1.0.xsd">
+    <GlobalTemperature Tnom="25.000"/>
+    <Header>
+        <Created Program="runmacro" Version="19.52.2025">
+            <Date>04/27/2026 18:37:58</Date>
+        </Created>
+        <Modified Program="runmacro" Version="19.52.2025">
+            <License>No License</License>
+            <Date>04/27/2026 18:47:30</Date>
+            <Change Importance="MEDIUM">
+                <Date>04/27/2026 18:37:58</Date>
+            </Change>
+            <Change Importance="HIGH">
+                <Date>04/27/2026 18:37:58</Date>
+            </Change>
+        </Modified>
+    </Header>
+    <Units>
+        <Angle>DEG</Angle>
+        <Capacitance>PF</Capacitance>
+        <Conductance>/OH</Conductance>
+        <Conductivity>SM</Conductivity>
+        <Frequency>GHZ</Frequency>
+        <Inductance>NH</Inductance>
+        <Length>MM</Length>
+        <Roughness>UM</Roughness>
+        <Resistance>OH</Resistance>
+        <Resistivity>OHCM</Resistivity>
+        <SheetRes>OHSQ</SheetRes>
+    </Units>
+    <Control>
+        <SweepType>VARSWP</SweepType>
+        <DeEmbed On="TRUE"/>
+        <Precision>DOUBLE</Precision>
+        <SpeedControl>MAX_ACCURACY</SpeedControl>
+        <ABSCacheLevel>MULTI_SWEEP</ABSCacheLevel>
+    </Control>
+    <Geometry YDirection="Negative">
+        <Variable MacroID="variableA" Name="W_outer_pair_gui" Units="LENGTH" Value="12.0" Description="Dim. Param.">
+            <GeoVar Type="ANCHORED" Direction="XDIR" Sign="-1" Scale="NORMAL">
+                <Position>(-5.242140102,1.996732612)</Position>
+                <Reference Type="POLY" Point="1" Id="9">
+                    <Index Vertex="4"/>
+                </Reference>
+                <Reference Type="POLY" Point="2" Id="9">
+                    <Index Vertex="3"/>
+                </Reference>
+                <PointSet Set="1"/>
+                <PointSet Set="2">
+                    <Reference Type="POLY" Id="9">
+                        <Index Vertex="2"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="9">
+                        <Index Vertex="9"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="11">
+                        <Index Vertex="0"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="11">
+                        <Index Vertex="3"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="9">
+                        <Index Vertex="8"/>
+                    </Reference>
+                </PointSet>
+            </GeoVar>
+            <GeoVar Type="ANCHORED" Direction="XDIR" Sign="1" Scale="NORMAL">
+                <Position>(5.049287047,1.606686575)</Position>
+                <Reference Type="POLY" Point="1" Id="10">
+                    <Index Vertex="1"/>
+                </Reference>
+                <Reference Type="POLY" Point="2" Id="10">
+                    <Index Vertex="2"/>
+                </Reference>
+                <PointSet Set="1"/>
+                <PointSet Set="2">
+                    <Reference Type="POLY" Id="10">
+                        <Index Vertex="3"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="10">
+                        <Index Vertex="8"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="13">
+                        <Index Vertex="1"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="13">
+                        <Index Vertex="2"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="10">
+                        <Index Vertex="9"/>
+                    </Reference>
+                </PointSet>
+            </GeoVar>
+        </Variable>
+        <Variable MacroID="variableE" Name="W_mid_res_gui" Units="LENGTH" Value="23.0" Description="Dim. Param.">
+            <GeoVar Type="SYMMETRIC" Direction="XDIR" Sign="1" Scale="NORMAL">
+                <Position>(11.91063332,-5.256259798)</Position>
+                <Reference Type="POLY" Point="1" Id="8">
+                    <Index Vertex="2"/>
+                </Reference>
+                <Reference Type="POLY" Point="2" Id="8">
+                    <Index Vertex="3"/>
+                </Reference>
+                <PointSet Set="1">
+                    <Reference Type="POLY" Id="8">
+                        <Index Vertex="1"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="8">
+                        <Index Vertex="10"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="8">
+                        <Index Vertex="9"/>
+                    </Reference>
+                </PointSet>
+                <PointSet Set="2">
+                    <Reference Type="POLY" Id="8">
+                        <Index Vertex="7"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="8">
+                        <Index Vertex="4"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="8">
+                        <Index Vertex="8"/>
+                    </Reference>
+                </PointSet>
+            </GeoVar>
+        </Variable>
+        <Variable MacroID="variableG" Name="G_adj_gui" Units="LENGTH" Value="1.15" Description="Dim. Param.">
+            <GeoVar Type="ANCHORED" Direction="YDIR" Sign="-1" Scale="NORMAL">
+                <Position>(17.76478786,-0.7296429016)</Position>
+                <Reference Type="POLY" Point="1" Id="10">
+                    <Index Vertex="4"/>
+                </Reference>
+                <Reference Type="POLY" Point="2" Id="8">
+                    <Index Vertex="3"/>
+                </Reference>
+                <PointSet Set="1"/>
+                <PointSet Set="2">
+                    <Reference Type="POLY" Id="8">
+                        <Index Vertex="1"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="8">
+                        <Index Vertex="10"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="8">
+                        <Index Vertex="0"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="8">
+                        <Index Vertex="5"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="8">
+                        <Index Vertex="6"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="8">
+                        <Index Vertex="11"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="8">
+                        <Index Vertex="7"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="8">
+                        <Index Vertex="4"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="8">
+                        <Index Vertex="8"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="8">
+                        <Index Vertex="9"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="8">
+                        <Index Vertex="2"/>
+                    </Reference>
+                </PointSet>
+            </GeoVar>
+        </Variable>
+        <Variable MacroID="variableH" Name="G_cross_gui" Units="LENGTH" Value="1.8" Description="Dim. Param.">
+            <GeoVar Type="SYMMETRIC" Direction="XDIR" Sign="1" Scale="NORMAL">
+                <Position>(1.288051708,-2.10433795)</Position>
+                <Reference Type="POLY" Point="1" Id="9">
+                    <Index Vertex="0"/>
+                </Reference>
+                <Reference Type="POLY" Point="2" Id="10">
+                    <Index Vertex="5"/>
+                </Reference>
+                <PointSet Set="1">
+                    <Reference Type="POLY" Id="9">
+                        <Index Vertex="2"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="9">
+                        <Index Vertex="9"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="11">
+                        <Index Vertex="0"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="11">
+                        <Index Vertex="3"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="9">
+                        <Index Vertex="6"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="9">
+                        <Index Vertex="10"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="9">
+                        <Index Vertex="11"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="9">
+                        <Index Vertex="7"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="9">
+                        <Index Vertex="8"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="9">
+                        <Index Vertex="3"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="9">
+                        <Index Vertex="1"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="9">
+                        <Index Vertex="4"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="9">
+                        <Index Vertex="5"/>
+                    </Reference>
+                </PointSet>
+                <PointSet Set="2">
+                    <Reference Type="POLY" Id="10">
+                        <Index Vertex="4"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="10">
+                        <Index Vertex="7"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="10">
+                        <Index Vertex="6"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="10">
+                        <Index Vertex="0"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="10">
+                        <Index Vertex="11"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="10">
+                        <Index Vertex="8"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="13">
+                        <Index Vertex="1"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="13">
+                        <Index Vertex="2"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="10">
+                        <Index Vertex="9"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="10">
+                        <Index Vertex="10"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="10">
+                        <Index Vertex="3"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="10">
+                        <Index Vertex="1"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="10">
+                        <Index Vertex="2"/>
+                    </Reference>
+                </PointSet>
+            </GeoVar>
+        </Variable>
+        <Variable MacroID="variableK" Name="P_feed_gui" Units="LENGTH" Value="4.6" Description="Dim. Param.">
+            <GeoVar Type="ANCHORED" Direction="YDIR" Sign="1" Scale="NORMAL">
+                <Position>(5.577927978,0.539933518)</Position>
+                <Reference Type="POLY" Point="1" Id="11">
+                    <Index Vertex="3"/>
+                </Reference>
+                <Reference Type="POLY" Point="2" Id="9">
+                    <Index Vertex="3"/>
+                </Reference>
+                <PointSet Set="1"/>
+                <PointSet Set="2">
+                    <Reference Type="POLY" Id="8">
+                        <Index Vertex="1"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="8">
+                        <Index Vertex="10"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="8">
+                        <Index Vertex="9"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="8">
+                        <Index Vertex="2"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="9">
+                        <Index Vertex="2"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="9">
+                        <Index Vertex="1"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="8">
+                        <Index Vertex="0"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="8">
+                        <Index Vertex="11"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="9">
+                        <Index Vertex="9"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="9">
+                        <Index Vertex="10"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="8">
+                        <Index Vertex="5"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="8">
+                        <Index Vertex="6"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="10">
+                        <Index Vertex="4"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="10">
+                        <Index Vertex="7"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="8">
+                        <Index Vertex="7"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="8">
+                        <Index Vertex="8"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="8">
+                        <Index Vertex="3"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="8">
+                        <Index Vertex="4"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="10">
+                        <Index Vertex="8"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="10">
+                        <Index Vertex="3"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="9">
+                        <Index Vertex="0"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="9">
+                        <Index Vertex="11"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="10">
+                        <Index Vertex="5"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="10">
+                        <Index Vertex="6"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="9">
+                        <Index Vertex="5"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="9">
+                        <Index Vertex="6"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="10">
+                        <Index Vertex="0"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="10">
+                        <Index Vertex="11"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="10">
+                        <Index Vertex="2"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="10">
+                        <Index Vertex="9"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="10">
+                        <Index Vertex="1"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="10">
+                        <Index Vertex="10"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="9">
+                        <Index Vertex="4"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="9">
+                        <Index Vertex="7"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="9">
+                        <Index Vertex="8"/>
+                    </Reference>
+                </PointSet>
+            </GeoVar>
+        </Variable>
+        <Variable MacroID="variableL" Name="W_feed_gui" Units="LENGTH" Value="1.1" Description="Dim. Param.">
+            <GeoVar Type="ANCHORED" Direction="YDIR" Sign="-1" Scale="NORMAL">
+                <Position>(-3.93345891,-4.03345891)</Position>
+                <Reference Type="POLY" Point="1" Id="13">
+                    <Index Vertex="2"/>
+                </Reference>
+                <Reference Type="POLY" Point="2" Id="13">
+                    <Index Vertex="1"/>
+                </Reference>
+                <PointSet Set="1"/>
+                <PointSet Set="2">
+                    <Reference Type="POLY" Id="13">
+                        <Index Vertex="0"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="11">
+                        <Index Vertex="0"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="11">
+                        <Index Vertex="1"/>
+                    </Reference>
+                </PointSet>
+            </GeoVar>
+        </Variable>
+        <Variable MacroID="variableM" Name="G_mid_open_gui" Units="LENGTH" Value="1.2" Description="Dim. Param.">
+            <GeoVar Type="SYMMETRIC" Direction="XDIR" Sign="1" Scale="NORMAL">
+                <Position>(0.9301606648,-3.195043398)</Position>
+                <Reference Type="POLY" Point="1" Id="8">
+                    <Index Vertex="0"/>
+                </Reference>
+                <Reference Type="POLY" Point="2" Id="8">
+                    <Index Vertex="5"/>
+                </Reference>
+                <PointSet Set="1">
+                    <Reference Type="POLY" Id="8">
+                        <Index Vertex="11"/>
+                    </Reference>
+                </PointSet>
+                <PointSet Set="2">
+                    <Reference Type="POLY" Id="8">
+                        <Index Vertex="6"/>
+                    </Reference>
+                </PointSet>
+            </GeoVar>
+        </Variable>
+        <Variable MacroID="variableN" Name="G_outer_open_gui" Units="LENGTH" Value="1.1" Description="Dim. Param.">
+            <GeoVar Type="SYMMETRIC" Direction="YDIR" Sign="1" Scale="NORMAL">
+                <Position>(-5.890437673,-0.8307349954)</Position>
+                <Reference Type="POLY" Point="1" Id="9">
+                    <Index Vertex="0"/>
+                </Reference>
+                <Reference Type="POLY" Point="2" Id="9">
+                    <Index Vertex="5"/>
+                </Reference>
+                <PointSet Set="1">
+                    <Reference Type="POLY" Id="9">
+                        <Index Vertex="11"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="10">
+                        <Index Vertex="5"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="10">
+                        <Index Vertex="6"/>
+                    </Reference>
+                </PointSet>
+                <PointSet Set="2">
+                    <Reference Type="POLY" Id="9">
+                        <Index Vertex="6"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="10">
+                        <Index Vertex="0"/>
+                    </Reference>
+                    <Reference Type="POLY" Id="10">
+                        <Index Vertex="11"/>
+                    </Reference>
+                </PointSet>
+            </GeoVar>
+        </Variable>
+        <Dielectric Name="Air" LossType="CONDUCTIVITY" Anisotropic="FALSE">
+            <FrequencyModel ModelType="None" RefFreq="0.0" ValidRef="FALSE"/>
+            <Conductivity Value="0.0"/>
+            <Eps Value="1.0"/>
+            <Tan Value="0.0"/>
+            <MuRel Value="1.0"/>
+            <MagLossTan Value="0.0"/>
+        </Dielectric>
+        <Dielectric MacroID="dielectricA" Name="Substrate" LossType="CONDUCTIVITY" Anisotropic="FALSE">
+            <FrequencyModel ModelType="None" RefFreq="0.0" ValidRef="FALSE"/>
+            <Conductivity Value="0.0"/>
+            <Eps Value="10.8"/>
+            <Tan Value="0.002"/>
+            <MuRel Value="1.0"/>
+            <MagLossTan Value="0.0"/>
+        </Dielectric>
+        <Conductor Name="Perfect Conductor" Conductivity="INF" LossType="CONDUCTIVITY"/>
+        <Conductor MacroID="conductorA" Name="Copper" Conductivity="5.8e7" LossType="CONDUCTIVITY"/>
+        <Box>
+            <BoxCover Type="TOP" MaterialType="PERFECT_CONDUCTOR" Roughness="0.0" Thickness="0.0"/>
+            <BoxCover Type="BOTTOM" MaterialType="PERFECT_CONDUCTOR" Roughness="0.0" Thickness="0.0"/>
+            <Size X="43.8" Y="51.8" Z="11.27"/>
+            <NumCells X="876" Y="1036"/>
+            <LocalOrigin X="0" Y="51.8"/>
+            <Symmetry On="FALSE"/>
+        </Box>
+        <Level MacroID="diel_layerA" MaterialName="Air" Number="0">
+            <DielectricMaterialModel Thickness="10.0"/>
+            <Objects>
+                <PlanarTechLayer MacroID="planarTLA" Name="Trace" MaterialName="Copper">
+                    <ColorPattern Color="#b03060" Pattern="updiag"/>
+                    <PlanarMaterialModel ModelType="THICK_METAL" NumSheets="2.0" SheetsMode="AUTO_PLACEMENT" ThickDirection="UP" Thickness="0.035"/>
+                    <RoughnessModel RoughnessOn="FALSE"/>
+                    <PlanarMeshing EnableMesh="TRUE" FillType="RECTANGULAR"/>
+                    <SubsectionMeshing XMin="1" XMax="100" YMin="1" YMax="100" EdgeMeshed="TRUE" DiagonalEdges="FALSE" AnisotropicType="X_AND_Y"/>
+                    <GLGMeshing GLG="FALSE"/>
+                    <Objects>
+                        <PlanarPolygon MacroID="polygonA" Id="8">
+                            <Points>(21.3,7.55) (10.4,7.55) (10.4,19.55) (33.4,19.55) (33.4,7.55)</Points>
+                            <Points>(22.5,7.55) (22.5,8.95) (32,8.95) (32,18.15) (11.8,18.15)</Points>
+                            <Points>(11.8,8.95) (21.3,8.95)</Points>
+                        </PlanarPolygon>
+                        <PlanarPolygon MacroID="polygonB" Id="9">
+                            <Points>(21,31.7) (21,20.7) (9,20.7) (9,43.8) (21,43.8)</Points>
+                            <Points>(21,32.8) (19.6,32.8) (19.6,42.4) (10.4,42.4) (10.4,22.1)</Points>
+                            <Points>(19.6,22.1) (19.6,31.7)</Points>
+                        </PlanarPolygon>
+                        <PlanarPolygon MacroID="polygonC" Id="10">
+                            <Points>(22.8,32.8) (22.8,43.8) (34.8,43.8) (34.8,20.7) (22.8,20.7)</Points>
+                            <Points>(22.8,31.7) (24.2,31.7) (24.2,22.1) (33.4,22.1) (33.4,42.4)</Points>
+                            <Points>(24.2,42.4) (24.2,32.8)</Points>
+                        </PlanarPolygon>
+                        <PlanarPolygon MacroID="polygonD" Id="11">
+                            <Points>(10.4,38.1) (0,38.1) (0,39.2) (10.4,39.2)</Points>
+                            <Objects>
+                                <Port MacroID="portA" Number="1" Vertex="1">
+                                    <Type Type="STD"/>
+                                    <Impedance Resistance="50" Reactance="0" Inductance="0" Capacitance="0"/>
+                                    <Center>(0,38.65)</Center>
+                                </Port>
+                            </Objects>
+                        </PlanarPolygon>
+                        <PlanarPolygon MacroID="polygonE" Id="13">
+                            <Points>(43.8,38.1) (33.4,38.1) (33.4,39.2) (43.8,39.2)</Points>
+                            <Objects>
+                                <Port MacroID="portB" Number="2" Vertex="3">
+                                    <Type Type="STD"/>
+                                    <Impedance Resistance="50" Reactance="0" Inductance="0" Capacitance="0"/>
+                                    <Center>(43.8,38.65)</Center>
+                                </Port>
+                            </Objects>
+                        </PlanarPolygon>
+                    </Objects>
+                </PlanarTechLayer>
+            </Objects>
+        </Level>
+        <Level MacroID="diel_layerB" MaterialName="Substrate" Number="1">
+            <DielectricMaterialModel Thickness="1.27"/>
+        </Level>
+    </Geometry>
+    <Sweeps SweepVariables="FALSE">
+        <Set MacroID="sweepsetA" On="TRUE">
+            <Frequencies>
+                <Sweep MacroID="freq_sweepA" Type="ABS_ENTRY" On="TRUE" Adaptive="TRUE" Start="0.75" Stop="1.05" Target="300"/>
+            </Frequencies>
+            <Variables>
+                <SweptVar MacroID="param_sweepA" Name="W_outer_pair_gui" Type="SWEEP" On="FALSE" Start="12" Stop="12"/>
+                <SweptVar MacroID="param_sweepE" Name="W_mid_res_gui" Type="SWEEP" On="FALSE" Start="23" Stop="23"/>
+                <SweptVar MacroID="param_sweepG" Name="G_adj_gui" Type="SWEEP" On="FALSE" Start="0.6999999999999993" Stop="0.6999999999999993"/>
+                <SweptVar MacroID="param_sweepH" Name="G_cross_gui" Type="SWEEP" On="FALSE" Start="1.8" Stop="1.8"/>
+                <SweptVar MacroID="param_sweepK" Name="P_feed_gui" Type="SWEEP" On="FALSE" Start="4.600000000000001" Stop="4.600000000000001"/>
+                <SweptVar MacroID="param_sweepL" Name="W_feed_gui" Type="SWEEP" On="FALSE" Start="1.1" Stop="1.1"/>
+                <SweptVar MacroID="param_sweepM" Name="G_mid_open_gui" Type="SWEEP" On="FALSE" Start="1.2" Stop="1.2"/>
+                <SweptVar MacroID="param_sweepN" Name="G_outer_open_gui" Type="SWEEP" On="FALSE" Start="1.1" Stop="1.1"/>
+            </Variables>
+        </Set>
+    </Sweeps>
+    <OutputFiles Folder="">
+        <Files>
+            <File MacroID="output_fileA" Type="TOUCH" Name="$BASENAME.s2p" UseInterpolatedData="TRUE" IncludeComments="TRUE" Precision="15" Parameter="S" Format="MA">
+                <Terminations Type="STD" Single="TRUE">
+                    <Port Rp="50" Xp="0" Lp="0" Cp="0"/>
+                </Terminations>
+            </File>
+        </Files>
+    </OutputFiles>
+</SonnetProject>

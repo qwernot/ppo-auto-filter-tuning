@@ -1,0 +1,37 @@
+{
+  "name": "Filter Example One Reference Anchor FixHeight v1",
+  "status": "candidate_satisfying_solution_on_lowcost_fixheight_template",
+  "template_manifest": "filter_example_one_tuning_manifest_lowcost_fixheight.json",
+  "template_path": "../models/templates/lowcost_fixheight/filter_example_one_reference_engineering_parameterized_0p10_fixheight.sonx",
+  "workspace": "../models/reference_runs/lowcost_anchor_adj_1p15",
+  "variable_values": {
+    "outer_resonator_width": 12.0,
+    "middle_resonator_width": 23.0,
+    "adjacent_coupling_gap": 1.15,
+    "cross_coupling_gap": 1.8,
+    "feed_offset": 4.6,
+    "feed_width": 1.1,
+    "middle_open_gap": 1.2,
+    "outer_open_gap": 1.1
+  },
+  "metrics": {
+    "main_peak_freq_hz": 906000000.0,
+    "main_peak_s21_db": -1.050816464291631,
+    "best_s11_db": -32.58807032134227,
+    "bandwidth_3db_hz": 48650363.69987714,
+    "high_side_zero_freq_hz": 942000000.0,
+    "high_side_zero_s21_db": -28.07326377680326,
+    "s21_at_905_db": -1.0518940087048325,
+    "s11_at_905_db": -22.49477869936988,
+    "s21_at_950_db": -20.577364753599067
+  },
+  "target_satisfied": true,
+  "strict_check": {
+    "s21_at_950_db": -20.577364753599067,
+    "meets_950mhz_rejection_gt_20db": true
+  },
+  "notes": [
+    "This candidate is the current recommended satisfying point on the corrected fixheight low-cost template.",
+    "On the current 0.10 mm low-cost template, adjacent_coupling_gap = 1.15 mm and 1.20 mm produced identical responses, which likely indicates the same effective geometry under the present quantization."
+  ]
+}

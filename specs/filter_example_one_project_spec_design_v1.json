@@ -1,0 +1,132 @@
+{
+  "schema_version": "project_spec_design_v1",
+  "project_key": "ppo_cross_coupled_filter",
+  "title": "基于 PPO 算法的交叉耦合滤波器自动调谐研究",
+  "status": "active_stage_b_c",
+  "baseline_model": {
+    "structure_family": "cross_coupled_open_loop_filter",
+    "topology_kind": "example_one",
+    "automation_entry_mode": "script_generated_template_plus_tuning_manifest",
+    "current_runnable_spec": "filter_example_one_tuning_manifest.json",
+    "current_template_path": "../data/reference_models/filter_example_one_reference_engineering_parameterized.sonx",
+    "template_policy": "The Sonnet template preserves 8 GUI variables, but the PPO mainline only exposes 5 tuning variables. W_feed_gui, G_mid_open_gui, and G_outer_open_gui stay fixed as calibration variables in the current stage.",
+    "frequency_plan_hz": {
+      "start": 750000000.0,
+      "stop": 1050000000.0,
+      "sweep_type": "adaptive"
+    }
+  },
+  "parameter_draft": [
+    {
+      "name": "outer_resonator_width",
+      "role": "geometry",
+      "unit": "MM",
+      "default_value": 12.0,
+      "min_value": 11.0,
+      "max_value": 13.5
+    },
+    {
+      "name": "middle_resonator_width",
+      "role": "geometry",
+      "unit": "MM",
+      "default_value": 23.0,
+      "min_value": 21.5,
+      "max_value": 24.5
+    },
+    {
+      "name": "adjacent_coupling_gap",
+      "role": "coupling",
+      "unit": "MM",
+      "default_value": 0.7,
+      "min_value": 0.4,
+      "max_value": 1.2
+    },
+    {
+      "name": "cross_coupling_gap",
+      "role": "coupling",
+      "unit": "MM",
+      "default_value": 1.8,
+      "min_value": 1.2,
+      "max_value": 2.4
+    },
+    {
+      "name": "feed_offset",
+      "role": "feed",
+      "unit": "MM",
+      "default_value": 4.6,
+      "min_value": 3.6,
+      "max_value": 5.6
+    }
+  ],
+  "fixed_template_variables": [
+    {
+      "name": "feed_width",
+      "sonnet_name": "W_feed_gui",
+      "value_mm": 1.1,
+      "reason": "The current feed width already yields a characteristic impedance close to 50 ohm, so it is frozen in the first-stage PPO action space."
+    },
+    {
+      "name": "middle_open_gap",
+      "sonnet_name": "G_mid_open_gui",
+      "value_mm": 1.2,
+      "reason": "This opening gap is preserved as a calibrated template parameter and is not part of the first-stage filter tuning action set."
+    },
+    {
+      "name": "outer_open_gap",
+      "sonnet_name": "G_outer_open_gui",
+      "value_mm": 1.1,
+      "reason": "This opening gap is preserved as a calibrated template parameter and is not part of the first-stage filter tuning action set."
+    }
+  ],
+  "metrics_draft": [
+    {
+      "name": "center_freq_hz",
+      "category": "derived",
+      "priority": "primary"
+    },
+    {
+      "name": "bandwidth_hz",
+      "category": "derived",
+      "priority": "primary"
+    },
+    {
+      "name": "insertion_loss_db",
+      "category": "derived",
+      "priority": "primary"
+    },
+    {
+      "name": "return_loss_db",
+      "category": "derived",
+      "priority": "primary"
+    },
+    {
+      "name": "high_side_zero_freq_hz",
+      "category": "derived",
+      "priority": "secondary"
+    },
+    {
+      "name": "high_side_zero_depth_db",
+      "category": "derived",
+      "priority": "secondary"
+    }
+  ],
+  "dataset_draft": {
+    "inputs": [
+      "tuning_variables"
+    ],
+    "outputs": [
+      "touchstone_s2p",
+      "filter_metrics",
+      "objective_summary"
+    ],
+    "split_strategy": "baseline_search_then_rl_rollout_dataset"
+  },
+  "ml_task": {
+    "task_type": "reinforcement_learning_tuning",
+    "algorithm_family": "ppo"
+  },
+  "existing_runtime_files": {
+    "tuning_manifest": "filter_example_one_tuning_manifest.json",
+    "target": "filter_example_one_target.json"
+  }
+}

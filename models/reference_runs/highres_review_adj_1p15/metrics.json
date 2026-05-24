@@ -1,0 +1,50 @@
+{
+  "source_path": "models/reference_runs/highres_review_adj_1p15/filter_example_one_reference_step_eval_fixheight.s2p",
+  "metrics": {
+    "main_peak_freq_hz": 905000000.0,
+    "main_peak_freq_ghz": 0.905,
+    "main_peak_s21_db": -1.0750288884234809,
+    "main_peak_s11_db": -26.167409812623518,
+    "best_s11_freq_hz": 920000000.0,
+    "best_s11_freq_ghz": 0.92,
+    "best_s11_db": -31.59163733669335,
+    "passband_left_freq_hz": 879087117.9426473,
+    "passband_left_freq_ghz": 0.8790871179426474,
+    "passband_right_freq_hz": 930335391.2892057,
+    "passband_right_freq_ghz": 0.9303353912892056,
+    "bandwidth_3db_hz": 51248273.34655833,
+    "bandwidth_3db_mhz": 51.248273346558335,
+    "high_side_zero_freq_hz": 944000000.0,
+    "high_side_zero_freq_ghz": 0.944,
+    "high_side_zero_s21_db": -28.254001362535202
+  },
+  "target": {
+    "name": "Filter Example One",
+    "center_freq_hz": {
+      "target": 905000000.0,
+      "tolerance": 5000000.0
+    },
+    "bandwidth_hz": {
+      "target": 40000000.0,
+      "tolerance": 10000000.0
+    },
+    "high_side_zero_freq_hz": {
+      "target": 950000000.0,
+      "tolerance": 50000000.0
+    },
+    "max_insertion_loss_db": 2.0,
+    "min_return_loss_db": 15.0,
+    "min_high_side_zero_depth_db": 20.0
+  },
+  "errors": {
+    "center_freq_error_hz": 0.0,
+    "bandwidth_error_hz": 11248273.346558332,
+    "high_side_zero_freq_error_hz": -6000000.0,
+    "insertion_loss_error_db": -0.9249711115765191,
+    "return_loss_error_db": -16.59163733669335,
+    "high_side_zero_depth_error_db": -8.254001362535202,
+    "success": false
+  },
+  "target_satisfied": false,
+  "output_path": "models/reference_runs/highres_review_adj_1p15/metrics.json"
+}
