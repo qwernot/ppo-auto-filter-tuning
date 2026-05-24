@@ -1,0 +1,85 @@
+﻿{
+  "schema_version": "filter_example_one_formal_ppo_v3_publish_manifest",
+  "published_at": "2026-05-09T20:07:16",
+  "ppo_run_dir": "C:\\Users\\eda\\repos\\auto-sonnet-sync\\build\\filter_example_one_ppo_train_fixheight_v3_repeat_seed101",
+  "baseline_dir": "C:\\Users\\eda\\repos\\auto-sonnet-sync\\build\\filter_example_one_same_budget_baseline_compare_v3_repeat_seed101",
+  "output_dir": "C:\\Users\\eda\\repos\\auto-sonnet-sync\\projects\\ppo_cross_coupled_filter\\data\\generated\\filter_example_one_formal_ppo_v3_repeat_seed101",
+  "available": {
+    "training_summary": true,
+    "evaluation_summary": true,
+    "same_budget_summary": true
+  },
+  "training_summary": {
+    "name": "Filter Example One PPO FixHeight Formal v3",
+    "manifest_path": "C:\\Users\\eda\\repos\\auto-sonnet-sync\\projects\\ppo_cross_coupled_filter\\specs\\filter_example_one_tuning_manifest_lowcost_fixheight.json",
+    "output_root": "C:\\Users\\eda\\repos\\auto-sonnet-sync\\build\\filter_example_one_ppo_train_fixheight_v3_repeat_seed101",
+    "total_timesteps": 256,
+    "episode_records": 64
+  },
+  "evaluation_summary": {
+    "episodes": 12,
+    "success_rate": 1.0,
+    "mean_steps": 1.0,
+    "mean_episode_reward": 10.06054720963411
+  },
+  "same_budget_summary": {
+    "ppo_run_dir": "C:\\Users\\eda\\repos\\auto-sonnet-sync\\build\\filter_example_one_ppo_train_fixheight_v3_repeat_seed101",
+    "manifest_path": "C:\\Users\\eda\\repos\\auto-sonnet-sync\\projects\\ppo_cross_coupled_filter\\specs\\filter_example_one_tuning_manifest_lowcost_fixheight.json",
+    "max_steps": 6,
+    "methods": [
+      "ppo_existing",
+      "no_tune",
+      "heuristic_rule"
+    ],
+    "episode_count": 12,
+    "per_episode_csv": "C:\\Users\\eda\\repos\\auto-sonnet-sync\\build\\filter_example_one_same_budget_baseline_compare_v3_repeat_seed101\\same_budget_per_episode.csv",
+    "summary_csv": "C:\\Users\\eda\\repos\\auto-sonnet-sync\\build\\filter_example_one_same_budget_baseline_compare_v3_repeat_seed101\\same_budget_summary.csv",
+    "summary_rows": [
+      {
+        "method": "heuristic_rule",
+        "episode_count": 12,
+        "success_rate": 0.9166666666666666,
+        "mean_steps": 0.8333333333333334,
+        "mean_episode_reward": 3.4178155461498725,
+        "mean_final_center_freq_mhz": 905.75,
+        "mean_final_bandwidth_mhz": 48.28616502319729,
+        "mean_final_insertion_loss_db": 1.0606619826315182,
+        "mean_final_return_loss_db": 31.28428977982154,
+        "mean_final_zero_freq_mhz": 942.3333333333334,
+        "mean_solve_count": 1.8333333333333333,
+        "mean_elapsed_total_seconds": 124.85293988329552,
+        "mean_elapsed_seconds_per_solve": 68.12379152973534
+      },
+      {
+        "method": "no_tune",
+        "episode_count": 12,
+        "success_rate": 0.5833333333333334,
+        "mean_steps": 0.0,
+        "mean_episode_reward": 0.0,
+        "mean_final_center_freq_mhz": 905.0,
+        "mean_final_bandwidth_mhz": 50.10381984327254,
+        "mean_final_insertion_loss_db": 1.0286545889004384,
+        "mean_final_return_loss_db": 30.825197329974245,
+        "mean_final_zero_freq_mhz": 943.8333333333334,
+        "mean_solve_count": 0.0,
+        "mean_elapsed_total_seconds": 0.0,
+        "mean_elapsed_seconds_per_solve": null
+      },
+      {
+        "method": "ppo_existing",
+        "episode_count": 12,
+        "success_rate": 1.0,
+        "mean_steps": 1.0,
+        "mean_episode_reward": 10.060547209634112,
+        "mean_final_center_freq_mhz": 906.4166666666666,
+        "mean_final_bandwidth_mhz": 45.136929770688056,
+        "mean_final_insertion_loss_db": 1.081702990335276,
+        "mean_final_return_loss_db": 33.15788407195301,
+        "mean_final_zero_freq_mhz": 945.25,
+        "mean_solve_count": 2.0,
+        "mean_elapsed_total_seconds": 135.97781019165026,
+        "mean_elapsed_seconds_per_solve": 67.98890509582513
+      }
+    ]
+  }
+}

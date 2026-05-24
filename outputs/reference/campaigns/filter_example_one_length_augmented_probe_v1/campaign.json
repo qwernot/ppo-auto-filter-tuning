@@ -1,0 +1,46 @@
+{
+  "campaign_id": "filter_example_one_length_augmented_probe_v1",
+  "name": "Filter Example One Length-Augmented Probe Campaign",
+  "description": "First 2D probe over the two newly added length variables while holding the other eight variables at the current anchor.",
+  "created_at": "2026-04-28T07:16:00",
+  "campaign_dir_from_repo_root": "projects/ppo_cross_coupled_filter/offload_campaigns/filter_example_one_length_augmented_probe_v1",
+  "manifest_path_from_repo_root": "projects/ppo_cross_coupled_filter/specs/filter_example_one_reference_tuning_manifest_v3_lowcost_fixheight_shape_relaxed_length_augmented.json",
+  "campaign_manifest_from_campaign_dir": "campaign_manifest.json",
+  "samples_csv_from_campaign_dir": "samples.csv",
+  "results_dir_from_campaign_dir": "results",
+  "summary_json_from_campaign_dir": "campaign_summary.json",
+  "summary_csv_from_campaign_dir": "campaign_summary.csv",
+  "sample_count": 30,
+  "generation": {
+    "method": "fixed_anchor_with_two_axis_probe",
+    "anchor_values": {
+      "outer_resonator_width": 12.0,
+      "middle_resonator_width": 23.0,
+      "middle_resonator_height": 12.0,
+      "outer_resonator_top_feed_clearance": 17.4,
+      "adjacent_coupling_gap": 1.2,
+      "cross_coupling_gap": 1.8,
+      "feed_offset": 4.7,
+      "feed_width": 1.1,
+      "middle_open_gap": 1.1,
+      "outer_open_gap": 1.0
+    },
+    "probe_axes": {
+      "middle_resonator_height": [
+        11.6,
+        11.8,
+        12.0,
+        12.2,
+        12.4
+      ],
+      "outer_resonator_top_feed_clearance": [
+        16.8,
+        17.0,
+        17.2,
+        17.4,
+        17.6,
+        17.8
+      ]
+    }
+  }
+}

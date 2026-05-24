@@ -1,0 +1,7 @@
+{
+  "name": "Filter Example One PPO FixHeight Reset v2",
+  "manifest_path": "E:\\repos\\auto-sonnet\\projects\\ppo_cross_coupled_filter\\specs\\filter_example_one_tuning_manifest_lowcost_fixheight.json",
+  "output_root": "E:\\repos\\auto-sonnet\\build\\filter_example_one_ppo_train_fixheight_v2_smoke32_run01",
+  "total_timesteps": 32,
+  "episode_records": 6
+}

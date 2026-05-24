@@ -1,0 +1,50 @@
+{
+  "campaign_id": "filter_example_one_local_bulk_320_r1",
+  "name": "Filter Example One Local Bulk Campaign",
+  "description": "Focused local refinement campaign around the current best low-cost region.",
+  "created_at": "2026-04-27T03:57:23",
+  "campaign_dir_from_repo_root": "projects/ppo_cross_coupled_filter/offload_campaigns/filter_example_one_local_bulk_320_r1",
+  "manifest_path_from_repo_root": "projects/ppo_cross_coupled_filter/specs/filter_example_one_tuning_manifest_lowcost.json",
+  "campaign_manifest_from_campaign_dir": "campaign_manifest.json",
+  "samples_csv_from_campaign_dir": "samples.csv",
+  "results_dir_from_campaign_dir": "results",
+  "summary_json_from_campaign_dir": "campaign_summary.json",
+  "summary_csv_from_campaign_dir": "campaign_summary.csv",
+  "sample_count": 320,
+  "runtime_reference_seconds": 63.456958400000985,
+  "generation": {
+    "method": "uniform_without_replacement_over_local_discrete_grid",
+    "seed": 20260427,
+    "current_best_values": {
+      "outer_resonator_width": 12.0,
+      "middle_resonator_width": 23.0,
+      "adjacent_coupling_gap": 0.5,
+      "cross_coupling_gap": 1.8,
+      "feed_offset": 4.6
+    },
+    "range_overrides": {
+      "outer_resonator_width": [
+        11.8,
+        12.3
+      ],
+      "middle_resonator_width": [
+        22.8,
+        23.3
+      ],
+      "adjacent_coupling_gap": [
+        0.4,
+        0.6
+      ],
+      "cross_coupling_gap": [
+        1.7,
+        1.95
+      ],
+      "feed_offset": [
+        4.45,
+        4.75
+      ]
+    },
+    "excluded_queue_root_from_repo_root": "projects/ppo_cross_coupled_filter/offload_queue/jobs",
+    "excluded_points_count": 8
+  }
+}

@@ -1,0 +1,7 @@
+﻿{
+  "name": "Filter Example One PPO FixHeight Formal v3",
+  "manifest_path": "C:\\Users\\eda\\repos\\auto-sonnet-sync\\projects\\ppo_cross_coupled_filter\\specs\\filter_example_one_tuning_manifest_lowcost_fixheight.json",
+  "output_root": "C:\\Users\\eda\\repos\\auto-sonnet-sync\\build\\filter_example_one_ppo_train_fixheight_v3_formal",
+  "total_timesteps": 256,
+  "episode_records": 61
+}

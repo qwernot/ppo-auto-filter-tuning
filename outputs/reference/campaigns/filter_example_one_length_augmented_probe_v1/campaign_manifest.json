@@ -1,0 +1,166 @@
+{
+  "name": "Filter Example One Reference v3 Lowcost FixHeight Shape Relaxed Length Augmented",
+  "template_path": "Template\\filter_example_one_reference_engineering_parameterized_0p10_fixheight.sonx",
+  "save_path": "SonnetProject/filter_example_one_reference_step_eval_0p10.sonx",
+  "server": null,
+  "target_path": "Specs\\filter_example_one_target_shape_relaxed.json",
+  "analysis": {
+    "peak_search_start_hz": 850000000.0,
+    "peak_search_stop_hz": 980000000.0,
+    "bandwidth_drop_db": 3.0,
+    "high_side_search_start_hz": 930000000.0,
+    "high_side_search_stop_hz": 1050000000.0
+  },
+  "variables": [
+    {
+      "name": "outer_resonator_width",
+      "sonnet_names": [
+        "W_outer_pair_gui"
+      ],
+      "unit": "MM",
+      "min_value": 11.0,
+      "max_value": 13.5,
+      "default_value": 12.0,
+      "max_delta": 0.2,
+      "snap_step": 0.05,
+      "snap_origin": 12.0,
+      "description": "Confirmed outer width for the two lower open-loop resonators.",
+      "shared_group": "outer_pair"
+    },
+    {
+      "name": "middle_resonator_width",
+      "sonnet_names": [
+        "W_mid_res_gui"
+      ],
+      "unit": "MM",
+      "min_value": 21.5,
+      "max_value": 24.5,
+      "default_value": 23.0,
+      "max_delta": 0.2,
+      "snap_step": 0.05,
+      "snap_origin": 23.0,
+      "description": "Confirmed outer width for the upper resonator.",
+      "shared_group": null
+    },
+    {
+      "name": "middle_resonator_height",
+      "sonnet_names": [
+        "H_mid_res_gui"
+      ],
+      "unit": "MM",
+      "min_value": 10.8,
+      "max_value": 13.2,
+      "default_value": 12.0,
+      "max_delta": 0.2,
+      "snap_step": 0.1,
+      "snap_origin": 12.0,
+      "description": "Outer height of the upper resonator, recommended to keep the lower edge fixed and move only the top edge.",
+      "shared_group": null
+    },
+    {
+      "name": "outer_resonator_top_feed_clearance",
+      "sonnet_names": [
+        "D_outer_top_feedtop_gui"
+      ],
+      "unit": "MM",
+      "min_value": 16.4,
+      "max_value": 18.8,
+      "default_value": 17.4,
+      "max_delta": 0.2,
+      "snap_step": 0.1,
+      "snap_origin": 17.4,
+      "description": "Distance from the lower-resonator top edge to the feed-line top edge; use this instead of directly binding the lower total outer height.",
+      "shared_group": "outer_pair"
+    },
+    {
+      "name": "adjacent_coupling_gap",
+      "sonnet_names": [
+        "G_adj_gui"
+      ],
+      "unit": "MM",
+      "min_value": 0.4,
+      "max_value": 1.2,
+      "default_value": 0.7,
+      "max_delta": 0.1,
+      "snap_step": 0.05,
+      "snap_origin": 0.7,
+      "description": "Shared vertical gap between the upper resonator and the two lower resonators.",
+      "shared_group": "adjacent_pair"
+    },
+    {
+      "name": "cross_coupling_gap",
+      "sonnet_names": [
+        "G_cross_gui"
+      ],
+      "unit": "MM",
+      "min_value": 1.2,
+      "max_value": 2.4,
+      "default_value": 1.8,
+      "max_delta": 0.1,
+      "snap_step": 0.05,
+      "snap_origin": 1.8,
+      "description": "Horizontal gap between the two lower resonators.",
+      "shared_group": null
+    },
+    {
+      "name": "feed_offset",
+      "sonnet_names": [
+        "P_feed_gui"
+      ],
+      "unit": "MM",
+      "min_value": 3.6,
+      "max_value": 5.6,
+      "default_value": 4.6,
+      "max_delta": 0.1,
+      "snap_step": 0.05,
+      "snap_origin": 4.6,
+      "description": "Feed-line coupling position measured to the lower edge of the feed line.",
+      "shared_group": "feed_pair"
+    },
+    {
+      "name": "feed_width",
+      "sonnet_names": [
+        "W_feed_gui"
+      ],
+      "unit": "MM",
+      "min_value": 0.9,
+      "max_value": 1.2,
+      "default_value": 1.1,
+      "max_delta": 0.05,
+      "snap_step": 0.05,
+      "snap_origin": 1.1,
+      "description": "Engineering-calibrated feed width.",
+      "shared_group": "feed_pair"
+    },
+    {
+      "name": "middle_open_gap",
+      "sonnet_names": [
+        "G_mid_open_gui"
+      ],
+      "unit": "MM",
+      "min_value": 0.8,
+      "max_value": 1.6,
+      "default_value": 1.2,
+      "max_delta": 0.1,
+      "snap_step": 0.05,
+      "snap_origin": 1.2,
+      "description": "Opening gap of resonator 2.",
+      "shared_group": null
+    },
+    {
+      "name": "outer_open_gap",
+      "sonnet_names": [
+        "G_outer_open_gui"
+      ],
+      "unit": "MM",
+      "min_value": 0.8,
+      "max_value": 1.5,
+      "default_value": 1.1,
+      "max_delta": 0.1,
+      "snap_step": 0.05,
+      "snap_origin": 1.1,
+      "description": "Shared opening gap of resonators 1 and 3.",
+      "shared_group": "outer_pair"
+    }
+  ]
+}

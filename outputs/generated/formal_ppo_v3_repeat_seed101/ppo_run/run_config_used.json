@@ -1,0 +1,99 @@
+﻿{
+  "name": "Filter Example One PPO FixHeight Formal v3",
+  "manifest_path": "C:\\Users\\eda\\repos\\auto-sonnet-sync\\projects\\ppo_cross_coupled_filter\\specs\\filter_example_one_tuning_manifest_lowcost_fixheight.json",
+  "output_root": "C:\\Users\\eda\\repos\\auto-sonnet-sync\\build\\filter_example_one_ppo_train_fixheight_v3_formal",
+  "max_steps": 6,
+  "reward_config": {
+    "improvement_weight": 1.0,
+    "absolute_error_weight": 0.2,
+    "constraint_violation_weight": 1.0,
+    "tracking_error_weight": 0.25,
+    "action_penalty_weight": 0.05,
+    "success_bonus": 10.0,
+    "analysis_failure_penalty": 5.0
+  },
+  "reset_policy": {
+    "mode": "anchor_jitter",
+    "anchor_values": {
+      "outer_resonator_width": 12.0,
+      "middle_resonator_width": 23.0,
+      "adjacent_coupling_gap": 1.15,
+      "cross_coupling_gap": 1.8,
+      "feed_offset": 4.6
+    },
+    "jitter": {
+      "outer_resonator_width": {
+        "minus": 0.1,
+        "plus": 0.1
+      },
+      "middle_resonator_width": {
+        "minus": 0.1,
+        "plus": 0.1
+      },
+      "adjacent_coupling_gap": {
+        "minus": 0.15,
+        "plus": 0.05
+      },
+      "cross_coupling_gap": {
+        "minus": 0.1,
+        "plus": 0.1
+      },
+      "feed_offset": {
+        "minus": 0.1,
+        "plus": 0.1
+      }
+    }
+  },
+  "training": {
+    "total_timesteps": 256,
+    "policy": "MlpPolicy",
+    "n_steps": 32,
+    "batch_size": 32,
+    "learning_rate": 0.0003,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "ent_coef": 0.01,
+    "clip_range": 0.2,
+    "vf_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "seed": 101,
+    "device": "auto"
+  },
+  "evaluation": {
+    "episodes": 12,
+    "deterministic": true,
+    "seed": 123,
+    "reset_policy": {
+      "mode": "anchor_jitter",
+      "anchor_values": {
+        "outer_resonator_width": 12.0,
+        "middle_resonator_width": 23.0,
+        "adjacent_coupling_gap": 1.15,
+        "cross_coupling_gap": 1.8,
+        "feed_offset": 4.6
+      },
+      "jitter": {
+        "outer_resonator_width": {
+          "minus": 0.05,
+          "plus": 0.05
+        },
+        "middle_resonator_width": {
+          "minus": 0.05,
+          "plus": 0.05
+        },
+        "adjacent_coupling_gap": {
+          "minus": 0.1,
+          "plus": 0.05
+        },
+        "cross_coupling_gap": {
+          "minus": 0.05,
+          "plus": 0.05
+        },
+        "feed_offset": {
+          "minus": 0.05,
+          "plus": 0.05
+        }
+      }
+    }
+  }
+}

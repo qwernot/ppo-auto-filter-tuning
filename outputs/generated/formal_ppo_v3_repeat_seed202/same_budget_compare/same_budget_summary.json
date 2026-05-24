@@ -1,0 +1,60 @@
+﻿{
+  "ppo_run_dir": "C:\\Users\\eda\\repos\\auto-sonnet-sync\\build\\filter_example_one_ppo_train_fixheight_v3_repeat_seed202",
+  "manifest_path": "C:\\Users\\eda\\repos\\auto-sonnet-sync\\projects\\ppo_cross_coupled_filter\\specs\\filter_example_one_tuning_manifest_lowcost_fixheight.json",
+  "max_steps": 6,
+  "methods": [
+    "ppo_existing",
+    "no_tune",
+    "heuristic_rule"
+  ],
+  "episode_count": 12,
+  "per_episode_csv": "C:\\Users\\eda\\repos\\auto-sonnet-sync\\build\\filter_example_one_same_budget_baseline_compare_v3_repeat_seed202\\same_budget_per_episode.csv",
+  "summary_csv": "C:\\Users\\eda\\repos\\auto-sonnet-sync\\build\\filter_example_one_same_budget_baseline_compare_v3_repeat_seed202\\same_budget_summary.csv",
+  "summary_rows": [
+    {
+      "method": "heuristic_rule",
+      "episode_count": 12,
+      "success_rate": 0.9166666666666666,
+      "mean_steps": 0.8333333333333334,
+      "mean_episode_reward": 3.4178155461498725,
+      "mean_final_center_freq_mhz": 905.75,
+      "mean_final_bandwidth_mhz": 48.28616502319729,
+      "mean_final_insertion_loss_db": 1.0606619826315182,
+      "mean_final_return_loss_db": 31.28428977982154,
+      "mean_final_zero_freq_mhz": 942.3333333333334,
+      "mean_solve_count": 1.8333333333333333,
+      "mean_elapsed_total_seconds": 124.99965209164657,
+      "mean_elapsed_seconds_per_solve": 68.17291619404084
+    },
+    {
+      "method": "no_tune",
+      "episode_count": 12,
+      "success_rate": 0.5833333333333334,
+      "mean_steps": 0.0,
+      "mean_episode_reward": 0.0,
+      "mean_final_center_freq_mhz": 905.0,
+      "mean_final_bandwidth_mhz": 50.10381984327254,
+      "mean_final_insertion_loss_db": 1.0286545889004384,
+      "mean_final_return_loss_db": 30.825197329974245,
+      "mean_final_zero_freq_mhz": 943.8333333333334,
+      "mean_solve_count": 0.0,
+      "mean_elapsed_total_seconds": 0.0,
+      "mean_elapsed_seconds_per_solve": null
+    },
+    {
+      "method": "ppo_existing",
+      "episode_count": 12,
+      "success_rate": 1.0,
+      "mean_steps": 1.0,
+      "mean_episode_reward": 10.040072626816142,
+      "mean_final_center_freq_mhz": 906.75,
+      "mean_final_bandwidth_mhz": 46.12774919795373,
+      "mean_final_insertion_loss_db": 1.0740729454813251,
+      "mean_final_return_loss_db": 30.044835599414057,
+      "mean_final_zero_freq_mhz": 944.9166666666666,
+      "mean_solve_count": 2.0,
+      "mean_elapsed_total_seconds": 136.0219187499703,
+      "mean_elapsed_seconds_per_solve": 68.01095937498515
+    }
+  ]
+}
